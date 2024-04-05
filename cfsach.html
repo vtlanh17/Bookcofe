@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TÔN VINH GIÁ TRỊ ĐỌC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="LAN ANH">
+    <meta name="keywords" content="sách">
+    <meta name="keywords" content="văn hóa đọc">
+    <meta name="description" content="tuyên truyền văn hóa đọc">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="style_evt.css"> <!-- Đường dẫn đến tệp CSS của bạn -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+<body>  
+  <section>
+  
+    <nav class="navbar navbar-expand-md">
+        <!-- container -->
+        <div class="container">
+            <a class="navbar-brand" href="#"> <span class="brand-text">BOOKQUEST</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="color: aquamarine;">
+              
+                <label type="button" class='toggle-btn' for='toggle-menu'>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+            </button>
+            <div class="collapse navbar-collapse">
+                <!-- ms-auto -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(27, 103, 87);">
+                          <li><a class="dropdown-item" href="event.html">TỔNG QUAN</a></li>
+                          <hr>
+                            <li><a class="dropdown-item" href="nsvn.html">NGÀY SÁCH VIỆT NAM 21/4</a></li>
+                            <li><a class="dropdown-item" href="cfsach.html">CAFE SÁCH</a></li>
+                            <li><a class="dropdown-item" href="dds.html">ĐÊM ĐỌC SÁCH</a></li>
+                            <li><a class="dropdown-item" href="hstc.html">HỘI SÁCH THEO CÂN</a></li>
+                            <li><a class="dropdown-item" href="htvhd.html">HÀNH TRÌNH VĂN HÓA ĐỌC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">REVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tip.html">TIP</a>
+                    </li>
+                 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <!-- Modal -->
+   
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="brand-text">BOOKQUEST</span>
+            </div>
+            <div class="modal-body">
+                <!-- ms-auto -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html"><i class="fas fa-home" style="color: aquamarine;"></i> HOME</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-users" style="color: aquamarine;"></i>
+                            EVENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(27, 103, 87);">
+                          <li><a class="dropdown-item" href="event.html">TỔNG QUAN</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="nsvn.html">NGÀY SÁCH VIỆT NAM 21/4</a></li>
+                          <li><a class="dropdown-item" href="cfsach.html">CAFE SÁCH</a></li>
+                          <li><a class="dropdown-item" href="dds.html">ĐÊM ĐỌC SÁCH</a></li>
+                          <li><a class="dropdown-item" href="hstc.html">HỘI SÁCH THEO CÂN</a></li>
+                          <li><a class="dropdown-item" href="htvhd.html">HÀNH TRÌNH VĂN HÓA ĐỌC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html"><i class="fas fa-folder-open" style="color: aquamarine;"></i> REVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tip.html"><i class="fas fa-tags" style="color: aquamarine;"></i>TIP</a>
+                    </li>
+                  
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><label for='toggle-menu'>Close</label></button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script> 
+
+
+
+
+<div class="cfs_home d-flex">
+    <div class="cfs_homect flex-fill">
+        <h2>CAFE SÁCH</h2>
+        <span>"Ngọt ngào cùng cafe-Thư giãn cùng trang sách"</span>
+        <br><br>
+        <span>Thả lỏng tâm hồn, tìm kiếm cảm hứng và trải nghiệm sự hòa quyện giữa hương vị cà phê thơm ngon và trang sách. </span>
+    <br>
+    <a href="#ctcf" class="read-more">READ MORE</a>
+
+    </div>
+   <div class="cfs_homeimg flex-fill">
+    <img src="picture/cfs_home.png" style="width: 50vw;">
+   </div>
+  
+</div>
+
+<div id="ctcf">
+  <div class="slogan_cf d-flex">
+    <div class="slg1cf flex-fill">
+     <span>Đắm mình trong trang sách, để cuộc sống trở nên đầy ý nghĩa và tươi mới.</span>  
+    </div>
+    <div class="slg2cf flex-fill">
+     <span>Sách là nguồn sống, để bạn sống một cuộc đời đầy ý nghĩa và kiến thức.</span>
+      </div>
+      <div class="slg3cf flex-fill">
+        <span>Trang sách là thần thái, để tâm hồn được nâng cao và tinh thần được bồi dưỡng. <span>
+         </div>
+
+  </div>
+</div>
+ 
+  <div class="ct1_cfs d-flex">
+    <div class="imgct1_cfs flex-fill">
+        <img src="picture/cfs1.jpg">
+    </div>
+    <div class="ctct1_cfs flex-fill">
+        <span>Trào lưu cafe sách đã trở thành một nguồn cảm hứng và sự thư giãn đối với nhiều người. 
+            Đến quán cafe, ta có thể đắm chìm trong không gian yên tĩnh,
+             tận hưởng một ly cà phê thơm ngon và nhâm nhi cuốn sách yêu thích.</span>
+    </div>
+  </div>
+  <br>
+  <div class="ct2_cfs d-flex">
+    <div class="ctct2_cfs flex-fill">
+        <span>Việc uống cà phê có thể giúp tăng cường tập trung và tăng cường trí nhớ ngắn hạn. 
+            Cà phê chứa chất kích thích như caffeine, giúp tăng cường hoạt động của não bộ. Khi kết hợp với việc đọc sách,
+             khả năng tập trung và nắm bắt thông tin sẽ được nâng cao, giúp ta tiếp thu kiến thức trong sách một cách hiệu quả.</span>
+    </div>
+    <div class="imgct2_cfs flex-fill">
+        <img src="picture/cfs2.jpg">
+    </div>
+    
+  </div>
+  <br>
+  <div class="ct1_cfs d-flex">
+    <div class="imgct1_cfs flex-fill">
+        <img src="picture/cfs4.jpg">
+    </div>
+    <div class="ctct1_cfs flex-fill">
+        <span>Sách là cánh cửa mở ra thế giới, mang lại cảm giác thoải mái như
+            thoát khỏi cuộc sống hiện tại. Uống cà phê khi đọc sách tạo ra một không gian riêng tư, nơi mà chúng ta có thể thư giãn, tránh xa áp lực hàng ngày. Một tách cà phê ấm áp và cuốn sách thú vị sẽ giúp ta giải tỏa căng thẳng,
+             thư giãn tinh thần, cảm nhận niềm vui trong từng trang sách.</span>
+    </div>
+  </div>
+<br>
+<div class="ct2_cfs d-flex">
+    <div class="ctct2_cfs flex-fill">
+        <span>Uống cà phê và đọc sách không chỉ là một trải nghiệm cá nhân mà còn tạo ra cơ hội kết nối xã hội và thảo luận với người khác. 
+            Bạn có thể chia sẻ ấn tượng về một cuốn sách với bạn bè, gia đình hoặc tham gia vào các câu lạc bộ đọc sách. Việc thảo luận với những người có cùng sở thích sẽ mở ra cánh cửa cho một cuộc trao đổi ý kiến và quan điểm,
+             giúp ta mở rộng tầm nhìn và nâng cao khả năng giao tiếp.</span>
+    </div>
+    <div class="imgct2_cfs flex-fill">
+        <img src="picture/cfs5.jpg">
+    </div>
+    
+  </div>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+  <img class="logo" src="picture/logoct.png" style="margin-left: 43.85vw;; margin-bottom: -5.8vw;margin-top: 10vw;">
+<div class="lh">
+  
+    <div class="form">
+      <div class="contact-info">
+        <span class="circle3"></span>
+        <h3 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+        <p class="text">
+          Để được hỗ trợ nhanh nhất hãy liên hệ với chúng tôi qua
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="picture/location.png" class="icon" alt="" />
+            <p>Trường CNTT&TT Việt Hàn</p>
+          </div>
+          <div class="information">
+            <img src="picture/email.png" class="icon" alt="" />
+            <p>anhvtl.22ite@vku.udn.vn</p>
+          </div>
+          <div class="information">
+            <img src="picture/sdt.png" class="icon" alt="" />
+            <p>0383462500</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          
+          <div class="social-icons">
+            <a href="https://www.facebook.com/bang.lam.9279">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lamlam1618">
+                <i class="fab fa-tiktok"></i>
+
+            </a>
+            <a href="https://www.instagram.com/bich.ngoc.1618/">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle1"></span>
+        <span class="circle2"></span>
+
+        <form action="contact.php" autocomplete="off">
+          <h3 class="title">ĐẶT CÂU HỎI</h3>
+          <div class="input-container1">
+            <input type="text" name="name" class="input" />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container1">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container1">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container1 textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="GỬI" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+  </script>
+</body>

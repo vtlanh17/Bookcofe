@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TÔN VINH GIÁ TRỊ ĐỌC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="Bích Ngọc">
+    <meta name="keywords" content="sách">
+    <meta name="keywords" content="văn hóa đọc">
+    <meta name="description" content="tuyên truyền văn hóa đọc">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="style_tip.css"> <!-- Đường dẫn đến tệp CSS của bạn -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "105452205921692");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+
+
+
+</head>
+<body>  
+  <section>
+  
+    <nav class="navbar navbar-expand-md">
+        <!-- container -->
+        <div class="container">
+            <a class="navbar-brand" href="#"> <span class="brand-text">BOOKQUEST</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="color: aquamarine;">
+              
+                <label type="button" class='toggle-btn' for='toggle-menu'>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+            </button>
+            <div class="collapse navbar-collapse">
+                <!-- ms-auto -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(27, 103, 87);">
+                          <li><a class="dropdown-item" href="event.html">TỔNG QUAN</a></li>
+                          <hr>
+                            <li><a class="dropdown-item" href="#">NGÀY SÁCH VIỆT NAM 21/4</a></li>
+                            <li><a class="dropdown-item" href="#">CAFE SÁCH</a></li>
+                            <li><a class="dropdown-item" href="#">ĐÊM ĐỌC SÁCH</a></li>
+                            <li><a class="dropdown-item" href="#">HỘI SÁCH THEO CÂN</a></li>
+                            <li><a class="dropdown-item" href="#">HÀNH TRÌNH VĂN HÓA ĐỌC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">REVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tip.html">TIP</a>
+                    </li>
+                 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <!-- Modal -->
+   
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="brand-text">BOOKQUEST</span>
+            </div>
+            <div class="modal-body">
+                <!-- ms-auto -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html"><i class="fas fa-home" style="color: aquamarine;"></i> HOME</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-users" style="color: aquamarine;"></i>
+                            EVENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(27, 103, 87);">
+                          <li><a class="dropdown-item" href="event.html">TỔNG QUAN</a></li>
+                          <hr>
+                            <li><a class="dropdown-item" href="#">NGÀY SÁCH VIỆT NAM 21/4</a></li>
+                            <li><a class="dropdown-item" href="#">CAFE SÁCH</a></li>
+                            <li><a class="dropdown-item" href="#">ĐÊM ĐỌC SÁCH</a></li>
+                            <li><a class="dropdown-item" href="#">HỘI SÁCH THEO CÂN</a></li>
+                            <li><a class="dropdown-item" href="#">HÀNH TRÌNH VĂN HÓA ĐỌC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html"><i class="fas fa-folder-open" style="color: aquamarine;"></i> REVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tip.html"><i class="fas fa-tags" style="color: aquamarine;"></i>TIP</a>
+                    </li>
+                  
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><label for='toggle-menu'>Close</label></button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script> 
+
+<div class="content">
+    <div class="d-flex tip">
+        <div class="flex-fill img">
+            <img src="picture/tip.png" style="width: 50vw;">
+        </div>
+        <div class="flex-fill ct_tip">
+            <h2>LÀM SAO ĐỂ?</h2>
+            <span><img src="picture/plain.png" style="width: 10vw;">KHƠI DẬY ĐAM MÊ ĐỌC SÁCH <img src="picture/plain2.png" style="width: 10vw;"></span>
+        </div>
+    </div>
+    <div class="tc_rv d-flex">
+        <div class="tc1 flex-fill">
+          <h3 style="font-size: 2.3vw;">
+            TRANG SÁCH-CÁNH CỬA TRI THỨC!</h3>
+         <span style="font-size: 1.3vw;">Đọc sách giúp chúng ta tiếp cận với kiến thức mới, khám phá các lĩnh vực khác nhau. Điều này mở rộng tầm nhìn và hiểu biết của chúng ta về thế giới xung quanh.</span>
+        </div>
+        <div class="tc2 flex-fill">
+         <h3 style="font-size: 2.3vw;">SÁCH LÀ HÀNH TRANG CHO TÂM HỒN BAY CAO!</h3>
+         <span style="font-size: 1.3vw;"> Đọc sách giúp chúng ta phát triển khả năng tưởng tượng, sáng tạo và diễn đạt ý tưởng, xây dựng câu chuyện, sử dụng ngôn từ một cách chính xác.</span>
+          </div>
+          <div class="tc3 flex-fill">
+            <h3 style="font-size: 2.3vw;">KHÁM PHÁ THẾ GIỚI VỚI CUỐN SÁCH TRONG TAY!</h3>
+            <span style="font-size: 1.3vw;">Sách không chỉ là nguồn thông tin mà còn là phương tiện giao tiếp và truyền đạt ý kiến. Từ sách, chúng ta học cách diễn đạt ý tưởng, cảm xúc và suy nghĩ của mình.</span>
+             </div>
+             <br>
+             </div>
+             <br>
+            
+             
+    <div class="about">
+       
+        <div class="d-flex">
+            <div class="flex-fill">
+                <img src="picture/tip_slogan.png" style="width: 40vw;">
+            </div>
+            <div class="flex-fill" style="width: 50%; text-align: center; padding: 3vw;">
+                <img src="picture/kkc.png" width="40vw">
+                <img src="picture/kkc.png" width="78vw">
+                <img src="picture/kkc.png" width="60vw">
+                <br>
+              
+                <span style="font-size: 1.5vw;">Đọc sách là cánh cửa tới một thế giới mới, 
+                    nơi mà những câu chữ trở thành những chìa khóa mở ra những kiến thức, trí tưởng tượng và trải nghiệm mới. 
+                    Trong những trang sách, ta gặp gỡ những nhân vật sống động, trải qua những cuộc phiêu lưu hấp dẫn và khám phá những ý tưởng sáng tạo.
+                     Đọc sách là cách để ta mở rộng tầm nhìn, 
+                    nuôi dưỡng tri thức và tìm thấy đam mê trong từng trang giấy.</span>
+                    <br><br>
+                    <h4 style="font-size: 1.7vw;">Vậy làm thế nào để tìm lại đam mê và đọc sách một cách hiệu quả nhất?
+                        <br><br>
+                        Hãy cùng chúng tôi tìm hiểu ngay sau đây
+                    </h4>
+                    <div class="read-more-container">
+                        <a href="#tiphay" class="read-more">READ MORE</a>
+                      </div>
+                   
+                    
+            </div>
+        </div>
+    </div>
+   <div id="tiphay">
+    <div class="choose">
+        <h2>1. Chọn sách phù hợp với bản thân</h2>
+        <div class="d-flex">
+         <div class="flex-fill" style="width: 60%;">
+             <img src="picture/tip2.png" width="50%">
+         </div>
+         <div class="flex-fill" style="width: 36%; margin-left: -7vw;">
+            <div class="counter">
+             <span id="count">1000</span>+
+            </div>
+           </div>
+     </div>
+    <div class="ct_tip1">
+     <h6 style="margin-left: 5vw; margin-top: 5vw; margin-bottom: -1.5vw;"> Mỗi ngày, có hàng ngàn cuốn sách được tung ra thị trường, điều này tạo ra một thách thức khiến việc lựa chọn cuốn sách phù hợp trở nên khó khăn.</h4>
+         <span>
+          
+           
+            <br> 
+            &nbsp; &nbsp;Để tìm được cuốn sách thích hợp, hãy dành thời gian để khám phá và nghiên cứu những chủ đề mà bạn quan tâm và đam mê. Đặt mục tiêu rõ ràng về những gì bạn muốn đạt được từ việc đọc sách. 
+            <br>
+            +Có thể bạn muốn tìm hiểu về lịch sử, khoa học, tiểu thuyết, phát triển cá nhân, nghệ thuật, du lịch, hoặc phiêu lưu.
+    <br>
+    +Nếu bạn đam mê một chủ đề cụ thể, hãy tìm các cuốn sách của các tác giả nổi tiếng hoặc những tác phẩm được đánh giá cao về chủ đề đó. 
+    <br>
+    +Đọc các đánh giá, nhận xét và phê bình về cuốn sách trước khi quyết định chọn nó. 
+    <br>
+    +Các nhóm đọc sách và cộng đồng trực tuyến cũng là một nguồn thông tin tuyệt vời để khám phá và chia sẻ những gợi ý về sách.
+    <br>
+    +Hãy mở rộng tầm nhìn của mình bằng cách đọc các thể loại và chủ đề mới. Khám phá sách của các tác giả đa dạng về quốc gia, văn hóa và thế hệ. Đôi khi, những cuốn sách nằm ngoài sự thoải mái của bạn có thể mang đến những khám phá và trải nghiệm mới mẻ.
+    <br>
+    
+     
+            
+            </span>
+            <h6>Quan trọng nhất, hãy đọc với lòng đam mê và tìm cuốn sách mà khiến bạn không thể dừng lại. Cuốn sách đó sẽ truyền cảm hứng và tạo động lực để bạn tiếp tục khám phá thế giới vô tận của tri thức và tưởng tượng.</h6>
+    </div>
+     </div>
+     <div class="tip2" style="padding: 10px;">
+         <h2>2. Kết nối với cộng đồng văn hóa đọc</h2>
+         <img src="picture/tip3.png" style="width: 50vw; margin-left: 20vw;">
+         <br>
+         <span>Tham gia vào các câu lạc bộ đọc sách hoặc nhóm đọc sách trực tuyến. Chia sẻ những suy nghĩ và nhận xét của bạn với người khác, 
+             thảo luận về sách mà bạn đang đọc và được nghe ý kiến từ những người khác cũng là một cách hay để tìm lại đam mê đọc sách.</span>
+     </div>
+     <div class="tip3">
+         <h3>3. Giảm thiểu thời gian dành cho mạng xã hội</h3>
+        <div class="d-flex" style="white-space: nowrap;">
+         <div class="flex-fill" style="width: 30%;">
+             <img src="picture/fb.png" width="80%">
+         </div>
+         <div class="flex-fill" style="width: 30%;">
+             <img src="picture/insta.png" width="80%">
+         </div>
+         <div class="flex-fill" style="width: 30%;">
+             <img src="picture/tiktok.png" width="80%">
+         </div>
+        </div>
+        <div class="tip3_ct">
+         <span> Thay vì lướt qua những bài đăng trên mạng xã hội, hãy dành thời gian đó để đọc sách thay vào đó. 
+             Bạn có thể giảm thiểu thời gian sử dụng mạng xã hội hoặc 
+             các trang truyền thông xã hội khác bằng cách đặt mục tiêu và thực hiện những hành động như sau:
+             <br>
+             +Xác định thời gian dành riêng cho việc đọc sách: Đặt mục tiêu và lên lịch thời gian hàng ngày hoặc hàng tuần để đọc sách.
+              Tạo ra một không gian yên tĩnh và thoải mái để tập trung vào việc đọc.
+              <br>
+              +Thiết lập giới hạn thời gian sử dụng mạng xã hội: Đặt một thời gian giới hạn hàng ngày cho việc sử dụng mạng xã hội và tuân thủ nó. 
+              Sử dụng các ứng dụng hoặc công cụ hạn chế thời gian để giúp bạn tuân thủ quy định này.
+              <br>
+              +Mang sách đi cùng bạn: Đặt một cuốn sách trong túi hoặc balo của bạn để khi có thời gian rảnh hoặc chờ đợi, 
+              bạn có thể tận dụng thời gian đó để đọc. 
+              Điều này giúp bạn tận dụng những khoảng thời gian ngắn và tích lũy thêm thời gian đọc sách.
+         </span>
+ 
+        </div>
+         </div>
+     </div>
+     <div class="tip4">
+        <img src="picture/kkc.png" width="40vw">
+        <img src="picture/kkc.png" width="78vw">
+        <img src="picture/kkc.png" width="60vw">
+        <br><br><br>
+        <div class="d-flex">
+            <div class="flex-fill">
+                <img src="picture/tip4.png" width="100%">
+            </div>
+            <div class="flex-fill" style="width: 50%; padding: 30px;">
+                <h2>ĐỌC SÁCH HIỆU QUẢ</h2>
+                <br>
+                <h6>CHẤT>LƯỢNG</h6>
+                <span>
+                     Việc đọc mang lại lợi ích to lớn cho sự phát triển cá nhân, trí tuệ.
+                     Đọc sách có hiệu quả giúp mở rộng kiến thức, phát triển kỹ năng ngôn ngữ, khả năng tư duy, sáng tạo, giảm căng thẳng, mệt mỏi.
+                     Tuy nhiên, nếu đọc sách không hiệu quả, nó có thể trở thành một hoạt động vô nghĩa, gây lãng phí thời gian.
+
+                </span>
+                <br>
+                <h6>  Vậy đọc sách thế nào mới là có hiệu quả?</h6>
+                <h6>Cùng tìm hiểu nhé! </h6>
+                <br>
+                <a href="#dochieuqua" class="read-more">READ MORE</a>
+
+            </div>
+        </div>
+      
+     </div>
+   <div id="dochieuqua">
+    <div class="hq1">
+        <h2>1. Xác định mục tiêu đọc</h2>
+        <span>Trước khi bắt đầu đọc, hãy đặt ra mục tiêu cụ thể cho việc đọc sách của bạn. 
+            Điều này có thể là tìm hiểu về một chủ đề cụ thể, nắm vững nội dung của cuốn sách, 
+            hoặc phát triển một kỹ năng cụ thể. Mục tiêu giúp bạn tập trung và có hướng đi rõ ràng trong quá trình đọc.</span>
+     </div>
+     <div class="hq2">
+        <h2>2. Tạo không gian yên tĩnh và tập trung</h2>
+         <br>
+                <img src="picture/evt_slide1.png" width="50%" style="margin-left: 25vw;">
+                <br>
+                <span>Tìm một không gian yên tĩnh và không có sự xao lạc để đọc sách. 
+                    Tắt điện thoại di động, máy tính hoặc bất kỳ nguồn phân tâm nào khác. 
+                    Tạo môi trường tĩnh lặng giúp bạn tập trung vào nội dung của cuốn sách và nắm bắt thông tin một cách hiệu quả.</span>
+     </div>
+     <div class="hq3">
+        <h2>3. Ghi chú và gạch dưới</h2>
+        <span>Khi đọc, hãy ghi chú những điểm quan trọng, ý chính và những suy nghĩ cá nhân của bạn. Điều này giúp tăng cường việc ghi nhớ và phân tích sâu hơn về nội dung.
+             Gạch dưới các đoạn văn hoặc từ vựng quan trọng cũng giúp bạn tái đọc và nhắc lại những điểm quan trọng sau này.</span>
+     </div>
+     <div class="hq4">
+        <h2>4. Hưởng thụ và tận hưởng quá trình đọc</h2>
+        <span> Cuối cùng, hãy thả lỏng và tận hưởng quá trình đọc sách.
+             Hãy tận hưởng việc khám phá thế giới mới, những câu chuyện thú vị và những tri thức mới. 
+            Đọc sách không chỉ là một hoạt động học tập mà còn là một trải nghiệm thú vị và bổ ích.</span>
+     </div>
+     <div class="hq5">
+        <img src="picture/kkc.png" width="40vw">
+        <img src="picture/kkc.png" width="78vw">
+        <img src="picture/kkc.png" width="60vw">
+        <br>
+        <h4>Ngoài ra bạn có thêm tham khảo sơ đồ sau đây để việc đọc sách hiệu quả hơn</h4>
+        <br>
+        <img src="picture/tipds.png" width="80%">
+     </div>
+        
+
+   </div>
+ </div>
+ 
+ 
+   </div>
+   <script>
+    var countElement = document.getElementById("count");
+    var count = 1000;
+    var isCounting = false;
+    var isUserScrolled = false;
+
+    function startCounting() {
+      if (!isCounting) {
+        isCounting = true;
+        var interval = setInterval(function () {
+          count++;
+          countElement.innerText = count;
+          if (count === 1500) {
+            clearInterval(interval);
+            isCounting = false;
+          }
+        }, 1);
+      }
+    }
+
+    function checkElementInView() {
+      var elementOffset = countElement.offsetTop + countElement.offsetHeight;
+      var windowOffset = window.pageYOffset + window.innerHeight;
+
+      if (windowOffset >= elementOffset && !isUserScrolled) {
+        isUserScrolled = true;
+        count = 1000; // Reset count to 1000
+        countElement.innerText = count;
+        startCounting();
+      } else if (windowOffset < elementOffset) {
+        isUserScrolled = false; // Reset isUserScrolled when scrolling back up
+      }
+    }
+
+    window.addEventListener("scroll", checkElementInView);
+  </script>
+
+
+
+
+
+
+
+
+
+<img class="logo" src="picture/logoct.png" style="margin-left: 43.85vw;; margin-bottom: -5.8vw;margin-top: 10vw;">
+<div class="lh">
+  
+    <div class="form">
+      <div class="contact-info">
+        <span class="circle3"></span>
+        <h3 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+        <p class="text">
+          Để được hỗ trợ nhanh nhất hãy liên hệ với chúng tôi qua
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="picture/location.png" class="icon" alt="" />
+            <p>Trường CNTT&TT Việt Hàn</p>
+          </div>
+          <div class="information">
+            <img src="picture/email.png" class="icon" alt="" />
+            <p>ngocttb.22it@vku.udn.vn</p>
+          </div>
+          <div class="information">
+            <img src="picture/sdt.png" class="icon" alt="" />
+            <p>0347503450</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          
+          <div class="social-icons">
+            <a href="https://www.facebook.com/bang.lam.9279">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lamlam1618">
+                <i class="fab fa-tiktok"></i>
+
+            </a>
+            <a href="https://www.instagram.com/bich.ngoc.1618/">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle1"></span>
+        <span class="circle2"></span>
+
+        <form action="contact.php" autocomplete="off">
+          <h3 class="title">ĐẶT CÂU HỎI</h3>
+          <div class="input-container1">
+            <input type="text" name="name" class="input" />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container1">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container1">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container1 textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="GỬI" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+  </script>
+</body>

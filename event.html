@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TÔN VINH GIÁ TRỊ ĐỌC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="Bích Ngọc">
+    <meta name="keywords" content="sách">
+    <meta name="keywords" content="văn hóa đọc">
+    <meta name="description" content="tuyên truyền văn hóa đọc">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="style_evt.css"> <!-- Đường dẫn đến tệp CSS của bạn -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "105452205921692");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+
+
+</head>
+<body>  
+  <section>
+  
+    <nav class="navbar navbar-expand-md">
+        <!-- container -->
+        <div class="container">
+            <a class="navbar-brand" href="#"> <span class="brand-text">BOOKQUEST</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="color: aquamarine;">
+              
+                <label type="button" class='toggle-btn' for='toggle-menu'>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+            </button>
+            <div class="collapse navbar-collapse">
+                <!-- ms-auto -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(27, 103, 87);">
+                          <li><a class="dropdown-item" href="event.html">TỔNG QUAN</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="nsvn.html">NGÀY SÁCH VIỆT NAM 21/4</a></li>
+                          <li><a class="dropdown-item" href="cfsach.html">CAFE SÁCH</a></li>
+                          <li><a class="dropdown-item" href="dds.html">ĐÊM ĐỌC SÁCH</a></li>
+                          <li><a class="dropdown-item" href="hstc.html">HỘI SÁCH THEO CÂN</a></li>
+                          <li><a class="dropdown-item" href="htvhd.html">HÀNH TRÌNH VĂN HÓA ĐỌC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">REVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tip.html">TIP</a>
+                    </li>
+                 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <!-- Modal -->
+   
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="brand-text">BOOKQUEST</span>
+            </div>
+            <div class="modal-body">
+                <!-- ms-auto -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html"><i class="fas fa-home" style="color: aquamarine;"></i> HOME</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-users" style="color: aquamarine;"></i>
+                            EVENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(27, 103, 87);">
+                          <li><a class="dropdown-item" href="event.html">TỔNG QUAN</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="nsvn.html">NGÀY SÁCH VIỆT NAM 21/4</a></li>
+                          <li><a class="dropdown-item" href="cfsach.html">CAFE SÁCH</a></li>
+                          <li><a class="dropdown-item" href="dds.html">ĐÊM ĐỌC SÁCH</a></li>
+                          <li><a class="dropdown-item" href="hstc.html">HỘI SÁCH THEO CÂN</a></li>
+                          <li><a class="dropdown-item" href="htvhd.html">HÀNH TRÌNH VĂN HÓA ĐỌC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html"><i class="fas fa-folder-open" style="color: aquamarine;"></i> REVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tip.html"><i class="fas fa-tags" style="color: aquamarine;"></i>TIP</a>
+                    </li>
+                  
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><label for='toggle-menu'>Close</label></button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script> 
+
+<div class="content_evt">
+  <div class="container_body">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2300">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex">
+          <div class="slide-content">
+            <h2>THẾ GIỚI SÁCH</h2>
+            <hr class="custom-hr">
+            <br>
+           <span>Sách là cầu nối giữa quá khứ và tương lai, mở ra cánh cửa cho sự sáng tạo và khám phá. Trong thế giới sách, chúng ta trở thành những nhà thám hiểm với một vạn cánh cửa để mở.</span>
+           <br><br>
+            <span style="font-weight: 600;font-family: Mothica; ">Đọc sách có thể không giàu, nhưng không đọc, chắc chắn nghèo!</span><br>
+            
+          </div>
+          <div class="slide-image-container">
+            <img src="picture/book1_event.png" alt="Ảnh slide 1" class="slide-image">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex">
+          <div class="slide-content">
+            <h2>BẠN CÓ BIẾT</h2>
+            <hr class="custom-hr">
+            <br>
+            <span>CUỘC ĐỜI CHÚNG TA THAY ĐỔI THEO HAI CÁCH</span><br>
+            <span>
+                -Qua những người ta gặp
+            </span>
+            <br>
+            <span>
+                -Qua những cuốn sách
+            </span>
+          </div>
+          <div class="slide-image-container">
+            <img src="picture/evt_slide2.png" alt="Ảnh slide 2" class="slide-image" style="margin-top: -10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+  </div>
+  </div>
+   </div>
+ 
+</div>
+</div>
+<div class="ct2_evt">
+  <h2 class="border-floating">Hãy để sách là người bạn đồng hành trong cuộc sống của bạn</h2>
+  <br>
+<br>
+
+<span style="font-size: 1.6vw; letter-spacing: 0.01vw;">
+  Đọc sách không chỉ là một hành động giải trí, mà còn là một cách để khám phá thế giới và truyền bá văn hóa đọc.
+
+  Mỗi cuốn sách mang trong mình một thế giới riêng, nơi chúng ta có thể lạc vào những câu chuyện hấp dẫn, khám phá tri thức mới, và trải nghiệm những cung bậc cảm xúc đa dạng. Sách là nguồn kiến thức vô tận, là kho tàng của sự sáng tạo và tư duy.
+  
+  Hãy truyền bá văn hóa đọc bằng cách chia sẻ những cuốn sách yêu thích của bạn với gia đình, bạn bè và cộng đồng xung quanh. Mời mọi người cùng tham gia vào những buổi thảo luận, giao lưu về sách, và cùng nhau khám phá những tác phẩm văn học đa dạng.
+</span>
+<br>
+<i class="fas fa-book-open" style="font-size: 44px; color:#464545;"></i>
+<br>
+<span style="font-size: 1.6vw; letter-spacing: 0.01;">
+  Tại trang web, chúng tôi ghi lại những sự kiện sách hot nhất đã và đang diễn ra. Điều này cho phép bạn đọc không chỉ được cập nhật thông tin về các sự kiện sách đáng chú ý, mà còn có thể tận hưởng không khí sôi động và phấn khởi của ngày hội sách mà bạn không thể tham dự trực tiếp. 
+  Hy vọng rằng thông tin trang web chúng tôi cung cấp sẽ mang lại cho bạn một trải nghiệm văn hóa đọc đầy thú vị và hứng khởi.
+</span>
+<br><br>
+<img src="picture/book_home.png" style="width: 100vw;">
+</div>
+
+
+
+
+
+<div class="container">
+  <div class="d-flex sk1 border hover-zoom" style="background-color: rgb(198, 227, 245); box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);">
+    <div class="flex-fill">
+      <h2>NGÀY SÁCH VIỆT NAM 21/4</h2>
+      <span>Ngày Sách Việt Nam được tổ chức vào ngày 21 tháng 4 hàng năm để tôn vinh giá trị và vai trò của sách trong đời sống con người, đồng thời khuyến khích tình yêu sách và đọc sách trong cộng đồng.</span>
+   <br>
+   <a href="nsvn.html" class="shine-effect">READ MORE</a>
+   
+    </div>
+    <div class="flex-fill d-flex justify-content-end">
+      <img src="picture/event1.png" style="width: 55vw;margin-bottom: -5px;">
+    </div>
+  </div>
+
+  <br>
+
+<img src="picture/tree.png" width="150vw">
+
+  <div class="d-flex sk2 border hover-zoom" style="background-color: rgb(244, 245, 221); box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);">
+    <div class="flex-fill d-flex justify-content-end">
+      <img src="picture/evt2.png" style="width: 45vw;">
+    </div>
+    <div class="flex-fill" style="text-align: justify;">
+      <h2 style="margin-left: 9vw;">CAFE SÁCH</h2>
+      <span style="font-weight: 600; margin-left: 2vw;">"Ngọt ngào cùng cafe-Thư giãn cùng trang sách"</span>
+      <br>
+      <span>Trào lưu cafe sách đã trở thành một nguồn cảm hứng và sự thư giãn đối với nhiều người. Đến quán cafe, ta có thể đắm chìm trong không gian yên tĩnh, tận hưởng một ly cà phê thơm ngon và nhâm nhi cuốn sách yêu thích.</span>
+      <br>
+   <a href="cfsach.html" class="shine-effect">READ MORE</a>
+    </div>
+  </div>
+  <br>
+<img src="picture/flow.png" style="width: 5vw; margin-left: 80vw;">
+
+  <div class="d-flex sk3 border hover-zoom" style="background-color: rgb(254, 242, 253); box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);">
+    <div class="flex-fill">
+      <h2 style="margin-left: 6vw; margin-bottom: 15px;">ĐÊM ĐỌC SÁCH</h2>
+      
+      <span>Sự kiện 'Đêm đọc sách' lần thứ sáu sẽ diễn ra từ ngày 20-23/1 tại nước Pháp và mạng lưới các trung tâm văn hóa Pháp trên toàn thế giới trong đó có Việt Nam. Sự kiện diễn ra với nhiều chương trình hấp dẫn nhằm tạo thói quen đọc sách cho các bạn nhỏ.</span>
+   <br>
+   <a href="dds.html" class="shine-effect">READ MORE</a>
+   
+    </div>
+    <div class="flex-fill d-flex justify-content-end">
+      <img src="picture/evt3.png" style="width: 45vw;">
+    </div>
+  </div>
+  <br>
+<img src="picture/fly.png" width="135vw" style="margin-left: 70vw;">
+<br>
+
+
+  <div class="d-flex sk4 border hover-zoom" style="background-color: rgb(240, 236, 228); box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);">
+    <div class="flex-fill">
+      <h2 style="margin-left: 3.5vw;">HỘI SÁCH THEO CÂN</h2>
+      <span>Được tổ chức lần đầu tiên tại Đà Nẵng bởi Công ty TNHH Văn hoá và Truyền Thông AZ Việt Nam, hội sách có nhiều chương trình ưu đãi, bao gồm giảm giá bán đến 70% và đặc biệt là chương trình bán sách theo cân với mức giá 49.000 đồng/kg.</span>
+   <br>
+   <a href="hstc.html" class="shine-effect">READ MORE</a>
+   
+    </div>
+    <div class="flex-fill d-flex justify-content-end">
+      <img src="picture/evt4.png" style="width: 45vw;">
+    </div>
+  </div>
+
+<br>
+<img src="picture/dog.png" width="115vw">
+<br>
+<div class="d-flex sk2 border hover-zoom" style="background-color: rgb(232, 243, 246); box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);">
+  <div class="flex-fill d-flex justify-content-end">
+    <img src="picture/ev5.png" style="width: 45vw;">
+  </div>
+  <div class="flex-fill" style="text-align: justify;">
+    <h2 style="margin-left: -3vw;">HÀNH TRÌNH VĂN HÓA ĐỌC</h2>
+    <span style="font-weight: 600; margin-left: 5.6vw;">"Hành trình kiến tạo văn hóa đọc k7"</span>
+    <br>
+    <span>Cuộc Cách Mạng Văn Hóa Đọc toàn dân.
+      Chấn hưng giáo dục bằng con đường Văn Hóa Đọc tinh hoa 3 gốc rễ: Đạo đức - Trí tuệ - Nghị lực.</span>
+    <br>
+ <a href="htvhd.html" class="shine-effect">READ MORE</a>
+  </div>
+</div>
+  </div>
+  
+
+
+
+
+  <img class="logo" src="picture/logoct.png" style="margin-left: 43.85vw;; margin-bottom: -5.8vw;margin-top: 10vw;">
+<div class="lh">
+  
+    <div class="form">
+      <div class="contact-info">
+        <span class="circle3"></span>
+        <h3 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+        <p class="text">
+          Để được hỗ trợ nhanh nhất hãy liên hệ với chúng tôi qua
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="picture/location.png" class="icon" alt="" />
+            <p>Trường CNTT&TT Việt Hàn</p>
+          </div>
+          <div class="information">
+            <img src="picture/email.png" class="icon" alt="" />
+            <p>ngocttb.22it@vku.udn.vn</p>
+          </div>
+          <div class="information">
+            <img src="picture/sdt.png" class="icon" alt="" />
+            <p>0347503450</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          
+          <div class="social-icons">
+            <a href="https://www.facebook.com/bang.lam.9279">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lamlam1618">
+                <i class="fab fa-tiktok"></i>
+
+            </a>
+            <a href="https://www.instagram.com/bich.ngoc.1618/">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle1"></span>
+        <span class="circle2"></span>
+
+        <form action="contact.php" autocomplete="off">
+          <h3 class="title">ĐẶT CÂU HỎI</h3>
+          <div class="input-container1">
+            <input type="text" name="name" class="input" />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container1">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container1">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container1 textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="GỬI" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+  </script>
+
+   </body>

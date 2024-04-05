@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TÔN VINH GIÁ TRỊ ĐỌC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="LAN ANH">
+    <meta name="keywords" content="sách">
+    <meta name="keywords" content="văn hóa đọc">
+    <meta name="description" content="tuyên truyền văn hóa đọc">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="style_evt.css"> <!-- Đường dẫn đến tệp CSS của bạn -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+<body>  
+  <section>
+  
+    <nav class="navbar navbar-expand-md">
+        <!-- container -->
+        <div class="container">
+            <a class="navbar-brand" href="#"> <span class="brand-text">BOOKQUEST</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="color: aquamarine;">
+              
+                <label type="button" class='toggle-btn' for='toggle-menu'>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </label>
+            </button>
+            <div class="collapse navbar-collapse">
+                <!-- ms-auto -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EVENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(27, 103, 87);">
+                          <li><a class="dropdown-item" href="event.html">TỔNG QUAN</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="nsvn.html">NGÀY SÁCH VIỆT NAM 21/4</a></li>
+                            <li><a class="dropdown-item" href="cfsach.html">CAFE SÁCH</a></li>
+                            <li><a class="dropdown-item" href="dds.html">ĐÊM ĐỌC SÁCH</a></li>
+                            <li><a class="dropdown-item" href="hstc.html">HỘI SÁCH THEO CÂN</a></li>
+                            <li><a class="dropdown-item" href="htvhd.html">HÀNH TRÌNH VĂN HÓA ĐỌC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">REVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tip.html">TIP</a>
+                    </li>
+                 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <!-- Modal -->
+   
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="brand-text">BOOKQUEST</span>
+            </div>
+            <div class="modal-body">
+                <!-- ms-auto -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html"><i class="fas fa-home" style="color: aquamarine;"></i> HOME</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-users" style="color: aquamarine;"></i>
+                            EVENT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(27, 103, 87);">
+                          <li><a class="dropdown-item" href="event.html">TỔNG QUAN</a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="nsvn.html">NGÀY SÁCH VIỆT NAM 21/4</a></li>
+                          <li><a class="dropdown-item" href="cfsach.html">CAFE SÁCH</a></li>
+                          <li><a class="dropdown-item" href="dds.html">ĐÊM ĐỌC SÁCH</a></li>
+                          <li><a class="dropdown-item" href="hstc.html">HỘI SÁCH THEO CÂN</a></li>
+                          <li><a class="dropdown-item" href="htvhd.html">HÀNH TRÌNH VĂN HÓA ĐỌC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html"><i class="fas fa-folder-open" style="color: aquamarine;"></i> REVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tip.html"><i class="fas fa-tags" style="color: aquamarine;"></i>TIP</a>
+                    </li>
+                  
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><label for='toggle-menu'>Close</label></button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script> 
+
+<div class="htvhd_home d-flex">
+    <div class="flex-fill ct_htvhd_home">
+        <h2>HÀNH TRÌNH</h2>
+        <br>
+        <h3>KIẾN TẠO VĂN HÓA ĐỌC</h3>
+        <br>
+        <a href="#ctcf" class="read-more" style="margin-left: 2vw;">READ MORE</a>
+    </div>
+    <div class="flex-fill img_htvhd_home">
+        <img src="picture/htvhd.png">
+    </div>
+</div>
+<br><br>
+
+<div id="ctcf">
+    <div class="slogan_cf d-flex">
+      <div class="slg1cf flex-fill">
+       <span>Sách là nguồn cảm hứng vô tận, là nguồn sáng thắp lên tầm mơ ước và khát vọng</span>  
+      </div>
+      <div class="slg2cf flex-fill">
+       <span>Trong thế giới sách, ta có thể là ai mình muốn, sống những cuộc phiêu lưu tuyệt vời và khám phá những bí mật tinh tế</span>
+        </div>
+        <div class="slg3cf flex-fill">
+          <span>Sách là hành trình không biên giới, nơi ta khám phá thế giới và khám phá chính mình cùng lúc <span>
+           </div>
+  
+    </div>
+  </div>
+<br>
+  <div class="ht1 d-flex">
+    <div class="flex-fill ht1_img">
+        <img src="picture/ktvhd.png">
+    </div>
+    <div class="flex-fill ht1_ct">
+        <span>Chúng ta ở đây là để nhìn về một cuộc cách mạng quan trọng bậc nhất của chính mình đó là cách mạng văn hóa đọc.
+            <br>
+        "Có Văn Hóa Đọc mới có sự Tự Học<br>
+Có sự Tự học mới có sự Tự Chủ<br>
+Có sự Tự chủ mới có sự Tự Do<br>
+Có sự Tự Do mới có Hạnh Phúc”.
+        </span>
+        
+   
+</div>
+
+</div>
+<div class="ht2 d-flex">
+  <div class="flex-fill ht2_ct">
+      <span>+Đích đến ban đầu văn hóa đọc để chuyển hóa 03 gốc rễ (Đạo đức - Trí tuệ - Nghị lực) nơi mỗi người tham gia.
+        <br>+Tiếp theo có những con người sẵn sàng cống hiến để làm tủ sách tại lớp hoặc tủ sách cộng đồng để lan tỏa văn hóa đọc cho người khác
+        .<br>+Đích đến cao nhất là sự đồng lòng chung tay của phụ huynh, học sinh và nhà trường.
+      </span>
+      
+</div>
+  <div class="flex-fill ht2_img">
+      <img src="picture/ktvhd2.jpg">
+  </div>
+
+</div>
+<br>
+
+<div class="ht3 d-flex">
+    <div class="flex-fill ht3_img">
+        <img src="picture/ktvhdê.jpg">
+    </div>
+    <div class="flex-fill ht3_ct">
+        <span>Bắt đầu từ 03 yếu tố quan trọng:<br>
+            + Một là, có tổ chức cộng đồng đứng lên kêu gọi, cổ vũ và tổ chức các hoạt động Văn Hóa Đọc.<br>
+            + Hai là, có lực lượng tiên phong chính là các Thầy Cô giáo tâm huyết coi sự học là sự nghiệp.<br>
+            + Ba là, có sự chung tay đóng góp về Tài Lực, Vật Lực, Sức Lực, Trí Lực của Cộng Đồng.
+        </span>
+        
+   
+</div>
+</div>
+
+
+<img class="logo" src="picture/logoct.png" style="margin-left: 43.85vw;; margin-bottom: -5.8vw;margin-top: 10vw;">
+<div class="lh">
+  
+    <div class="form">
+      <div class="contact-info">
+        <span class="circle3"></span>
+        <h3 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+        <p class="text">
+          Để được hỗ trợ nhanh nhất hãy liên hệ với chúng tôi qua
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="picture/location.png" class="icon" alt="" />
+            <p>Trường CNTT&TT Việt Hàn</p>
+          </div>
+          <div class="information">
+            <img src="picture/email.png" class="icon" alt="" />
+            <p>anhvtl.22ite@vku.udn.vn</p>
+          </div>
+          <div class="information">
+            <img src="picture/sdt.png" class="icon" alt="" />
+            <p>0383462500</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          
+          <div class="social-icons">
+            <a href="https://www.facebook.com/bang.lam.9279">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lamlam1618">
+                <i class="fab fa-tiktok"></i>
+
+            </a>
+            <a href="https://www.instagram.com/bich.ngoc.1618/">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle1"></span>
+        <span class="circle2"></span>
+
+        <form action="contact.php" autocomplete="off">
+          <h3 class="title">ĐẶT CÂU HỎI</h3>
+          <div class="input-container1">
+            <input type="text" name="name" class="input" />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container1">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container1">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container1 textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="GỬI" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+  </script>
+
+
+ 
+
+</body>
